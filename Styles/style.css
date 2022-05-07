@@ -1,12 +1,93 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&display=swap");
-body {
-  background: #1f3756;
-  background: radial-gradient(circle, #1f3756 0%, #141539 100%);
-  color: #3B4363;
-  height: 80vh;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 html {
   font-family: 'barlow semi condensed', sans-serif;
+}
+
+body {
+  background: #1f3756;
+  background: radial-gradient(circle, #1f3756 0%, #141539 100%);
+  color: #3B4363;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 600px;
+  width: 85%;
+  min-width: 300px;
+  height: 95px;
+  margin: 42px auto;
+  padding: 10px;
+  border: solid 3px #606E85;
+  border-radius: 6px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  margin-left: 8px;
+}
+
+.logo img {
+  height: 80%;
+}
+
+.score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600;
+  background-color: #fff;
+  height: 100%;
+  width: 74px;
+  border-radius: 4px;
+}
+
+.score__label {
+  color: #2A46C0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.score__record {
+  color: #3B4363;
+  font-size: 42px;
+  line-height: 38px;
 }
 /*# sourceMappingURL=style.css.map */

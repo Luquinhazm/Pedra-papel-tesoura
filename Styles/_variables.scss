@@ -1,0 +1,31 @@
+//Colors
+
+//Primary
+
+@mixin scissorsGradient {
+    background: rgb(236,158,14);
+    background: radial-gradient(circle, rgba(236,158,14,1) 0%, rgba(236,169,34,1) 100%);
+}
+
+@mixin paperGradient {
+    background: rgb(72,101,244);
+    background: radial-gradient(circle, rgba(72,101,244,1) 0%, rgba(86,113,245,1) 100%);
+}
+
+@mixin rockGradient {
+    background: rgb(220,46,78);
+    background: radial-gradient(circle, rgba(220,46,78,1) 0%, rgba(221,64,93,1) 100%);
+}
+
+// Neutral 
+
+$darkText: #3B4363; 
+$scoreText: #2A46C0;
+$headerOutline: #606E85;
+
+//background
+
+@mixin background-primary {
+    background: rgb(31,55,86);
+    background: radial-gradient(circle, rgba(31,55,86,1) 0%, rgba(20,21,57,1) 100%);
+}

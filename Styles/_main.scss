@@ -1,4 +1,90 @@
-body{
-    @include background-primary;
-    color: $darkText;
+.main__content{
+    background-image: url(/images/bg-triangle.svg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 180px;
+    height: 50%;
+    max-width: 580px;
+    width: 80%;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.PaperAndScissors{
+    display: flex;
+    justify-content: space-around;
+    max-width: 600;
+    width: 100%;
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+
+.paper--wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    @include paperGradient;
+    cursor: pointer;
+
+    .paper{
+       background-image: url(/images/icon-paper.svg);
+       background-repeat: no-repeat;
+       background-position: center ;
+       background-size: 45%;
+        background-color: #fff;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+    }
+}
+.scissors--wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    @include scissorsGradient;
+    cursor: pointer;
+
+    .scissors{
+        background-image: url(/images/icon-scissors.svg);
+        background-repeat: no-repeat;
+        background-position: center ;
+        background-size: 45%;
+        background-color: #fff;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+    }
+}
+.rock--wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    @include rockGradient;
+    cursor: pointer;
+    margin: 0 auto;
+
+    .rock{
+        background-image: url(/images/icon-rock.svg);
+        background-repeat: no-repeat;
+        background-position: center ;
+        background-size: 45%;
+        background-color: #fff;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+    }
 }

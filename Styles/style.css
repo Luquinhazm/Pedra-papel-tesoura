@@ -90,4 +90,151 @@ body {
   font-size: 42px;
   line-height: 38px;
 }
+
+.main__content {
+  background-image: url(/images/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 180px;
+  height: 50%;
+  max-width: 580px;
+  width: 80%;
+  min-width: 300px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.PaperAndScissors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 600;
+  width: 100%;
+  min-width: 300px;
+  margin-bottom: 20px;
+}
+
+.paper--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #4865f4;
+  background: radial-gradient(circle, #4865f4 0%, #5671f5 100%);
+  cursor: pointer;
+}
+
+.paper--wrap .paper {
+  background-image: url(/images/icon-paper.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45%;
+  background-color: #fff;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.scissors--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #ec9e0e;
+  background: radial-gradient(circle, #ec9e0e 0%, #eca922 100%);
+  cursor: pointer;
+}
+
+.scissors--wrap .scissors {
+  background-image: url(/images/icon-scissors.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45%;
+  background-color: #fff;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.rock--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #dc2e4e;
+  background: radial-gradient(circle, #dc2e4e 0%, #dd405d 100%);
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.rock--wrap .rock {
+  background-image: url(/images/icon-rock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45%;
+  background-color: #fff;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.rules {
+  width: 110px;
+  margin: 75px auto 24px;
+}
+
+.rules__btn {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  height: 40px;
+  width: 110px;
+  background-color: transparent;
+  border: 2px solid #606E85;
+  border-radius: 8px;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */

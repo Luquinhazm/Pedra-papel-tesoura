@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#141539">
+  <meta name="theme-color" content="">
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -32,7 +32,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style> -->
 </head>
-<body>
+<body id="body">
   
   <header class="header">
     <a href="index.html" class="logo"><img src="images/logo.svg" alt="Rock, Paper, Scissors" "></a>
@@ -59,7 +59,12 @@
   </main>
 
   <div class="rules">
-    <button class="rules__btn">Rules</button>
+    <button class="rules__btn" id="btnRules">Rules</button>
+  </div>
+
+  <div class="modal__rules" id="modalRules">
+    <span>Rules</span>
+    <img src="images/icon-close.svg" alt="" id="btn--close">
   </div>
 
 
@@ -70,5 +75,7 @@
       Coded by <a href="#">Luquinhazm</a>.
     </div>
   </footer>
+
+  <script src="modal.js"></script>
 </body>
 </html>

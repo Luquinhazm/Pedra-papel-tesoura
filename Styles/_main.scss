@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 180px;
-    height: 50%;
+    height: 50vh;
     max-width: 580px;
     width: 80%;
     min-width: 300px;
@@ -17,7 +17,7 @@
 
 .PaperAndScissors{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     max-width: 600;
     width: 100%;
     min-width: 300px;
@@ -28,6 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 50px;
     width: 120px;
     height: 120px;
     border-radius: 50%;

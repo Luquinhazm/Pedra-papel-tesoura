@@ -22,6 +22,7 @@ body {
   background: #1f3756;
   background: radial-gradient(circle, #1f3756 0%, #141539 100%);
   color: #3B4363;
+  height: 100vh;
 }
 
 .header {
@@ -37,8 +38,8 @@ body {
   max-width: 600px;
   width: 85%;
   min-width: 300px;
-  height: 95px;
-  margin: 42px auto;
+  height: 15vh;
+  margin: 40px auto;
   padding: 10px;
   border: solid 3px #606E85;
   border-radius: 6px;
@@ -96,7 +97,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 180px;
-  height: 50%;
+  height: 50vh;
   max-width: 580px;
   width: 80%;
   min-width: 300px;
@@ -120,8 +121,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 600;
   width: 100%;
   min-width: 300px;
@@ -138,6 +140,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 50px;
   width: 120px;
   height: 120px;
   border-radius: 50%;

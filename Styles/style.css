@@ -23,7 +23,6 @@ body {
   background: #1f3756;
   background: radial-gradient(circle, #1f3756 0%, #141539 100%);
   color: #3B4363;
-  padding-top: 25px;
 }
 
 .header {
@@ -40,7 +39,7 @@ body {
   width: 85%;
   min-width: 300px;
   height: 15vh;
-  margin: 0px auto;
+  margin: 5px auto;
   padding: 10px;
   border: solid 3px #606E85;
   border-radius: 6px;
@@ -135,6 +134,7 @@ body {
   width: 100%;
   min-width: 300px;
   margin-bottom: 50px;
+  gap: 50px;
 }
 
 .paper--wrap {
@@ -147,7 +147,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 50px;
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -232,7 +231,7 @@ body {
     max-width: 700px;
   }
   .paper--wrap {
-    margin-right: 150px;
+    margin-right: 0px;
     width: 150px;
     height: 150px;
   }
@@ -300,6 +299,7 @@ body {
 }
 
 .attribution a {
+  font-size: 8px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -362,6 +362,99 @@ body {
     right: -50%;
     height: 30px;
     width: 30px;
+  }
+}
+
+.step-choose {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+  height: 60vh;
+}
+
+.step-choose .PaperAndScissors {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.player__picked {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0px 60px;
+  max-width: 750px;
+  min-width: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.player__picked span {
+  font-weight: 700;
+  color: white;
+}
+
+.result {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  margin: 25px auto;
+}
+
+.result span {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  font-size: 32px;
+}
+
+.btn__playAgain {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 580px) {
+  .player__picked {
+    padding: 0;
+    min-width: 0px;
+  }
+  .player__picked span {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

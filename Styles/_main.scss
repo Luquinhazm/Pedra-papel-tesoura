@@ -22,13 +22,13 @@
     width: 100%;
     min-width: 300px;
     margin-bottom: 50px;
+    gap: 50px;
 }
 
 .paper--wrap{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 50px;
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -98,7 +98,7 @@
     }
 
     .paper--wrap{
-        margin-right: 150px;
+        margin-right: 0px;
         width: 150px;
         height: 150px;
 

@@ -25,35 +25,65 @@
     </div>
   </header>
 
-  <main class="main__content">
+
+  <div class="main__hidden">
+
+    <main class="main__content">
+      
+      <div class="PaperAndScissors">
+        
+        <div class="paper--wrap">
+          <div class="paper"></div>
+        </div>
+        
+        <div class="scissors--wrap">
+          <div class="scissors"></div>
+        </div>
+        
+      </div>
+      
+      <div class="rock--wrap">
+        <div class="rock"></div>
+      </div>
+      
+    </main>
+  </div>
+
+  <div class="step-choose">
 
     <div class="PaperAndScissors">
+     
+      <div class="player__picked">
+        <span>you picked</span>
+        <div class="paper--wrap">
+          <div class="paper"></div>
+        </div>
+      </div>
+
+      <div class="player__picked">
+        <span>the house picked</span>
+        <div class="paper--wrap">
+          <div class="paper"></div>
+        </div>
+      </div>
       
-      <div class="paper--wrap">
-        <div class="paper"></div>
-      </div>
-
-      <div class="scissors--wrap">
-        <div class="scissors"></div>
-      </div>
-
     </div>
-  
-    <div class="rock--wrap">
-      <div class="rock"></div>
+    
+    <div class="result">
+      <span>You win</span>
+      <button class="btn__playAgain">Play Again</button>
     </div>
-
-  </main>
-
-  <div class="rules">
-    <button class="rules__btn" id="btnRules">Rules</button>
   </div>
+    
+    <div class="rules">
+      <button class="rules__btn" id="btnRules">Rules</button>
+    </div>
 
   <div class="modal__rules" id="modalRules">
     <span>Rules</span>
     <img src="images/icon-close.svg" alt="fechar" id="btn--close">
   </div>
-
+  
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

@@ -365,6 +365,10 @@ body {
   }
 }
 
+.main__hidden {
+  display: none;
+}
+
 .step-choose {
   display: none;
   -webkit-box-orient: vertical;
@@ -382,6 +386,9 @@ body {
 }
 
 .step-choose .PaperAndScissors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -390,10 +397,8 @@ body {
           justify-content: center;
 }
 
-.player__picked {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.player__picked--paper {
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -411,9 +416,87 @@ body {
           align-items: center;
 }
 
-.player__picked span {
+.player__picked--paper span {
   font-weight: 700;
   color: white;
+}
+
+@media screen and (max-width: 580px) {
+  .player__picked--paper {
+    padding: 0;
+    min-width: 0px;
+  }
+  .player__picked--paper span {
+    margin-bottom: 20px;
+  }
+}
+
+.player__picked--rock {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0px 60px;
+  max-width: 750px;
+  min-width: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.player__picked--rock span {
+  font-weight: 700;
+  color: white;
+}
+
+@media screen and (max-width: 580px) {
+  .player__picked--rock {
+    padding: 0;
+    min-width: 0px;
+  }
+  .player__picked--rock span {
+    margin-bottom: 20px;
+  }
+}
+
+.player__picked--scissors {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0px 60px;
+  max-width: 750px;
+  min-width: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.player__picked--scissors span {
+  font-weight: 700;
+  color: white;
+}
+
+@media screen and (max-width: 580px) {
+  .player__picked--scissors {
+    padding: 0;
+    min-width: 0px;
+  }
+  .player__picked--scissors span {
+    margin-bottom: 20px;
+  }
 }
 
 .result {

@@ -26,40 +26,54 @@
   </header>
 
 
-  <div class="main__hidden">
+  <div class="" id="hidden__mainPage">
 
     <main class="main__content">
       
       <div class="PaperAndScissors">
         
-        <div class="paper--wrap">
+        <div class="paper--wrap" id="btnPaper">
           <div class="paper"></div>
         </div>
         
-        <div class="scissors--wrap">
+        <div class="scissors--wrap" id="btnScissors">
           <div class="scissors"></div>
         </div>
         
       </div>
       
-      <div class="rock--wrap">
+      <div class="rock--wrap" id="btnRock">
         <div class="rock"></div>
       </div>
       
     </main>
   </div>
 
-  <div class="step-choose">
+  <div class="step-choose" id="choosePage">
 
     <div class="PaperAndScissors">
      
-      <div class="player__picked">
+      <div class="player__picked--rock" id="pickedRock">
+        <span>you picked</span>
+        <div class="rock--wrap">
+          <div class="rock"></div>
+        </div>
+      </div>
+
+      <div class="player__picked--paper" id="pickedPaper">
         <span>you picked</span>
         <div class="paper--wrap">
           <div class="paper"></div>
         </div>
       </div>
 
+      <div class="player__picked--scissors" id="pickedScissors">
+        <span>you picked</span>
+        <div class="scissors--wrap">
+          <div class="scissors"></div>
+        </div>
+      </div>
+      
       <div class="player__picked">
         <span>the house picked</span>
         <div class="paper--wrap">
@@ -68,7 +82,7 @@
       </div>
       
     </div>
-    
+
     <div class="result">
       <span>You win</span>
       <button class="btn__playAgain">Play Again</button>
@@ -91,6 +105,8 @@
     </div>
   </footer>
   
+
+  <script src="layoutChange.js"></script>
   <script src="modal.js"></script>
 </body>
 </html>

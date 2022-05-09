@@ -12,6 +12,7 @@ ul, ol {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 html {
@@ -22,7 +23,6 @@ body {
   background: #1f3756;
   background: radial-gradient(circle, #1f3756 0%, #141539 100%);
   color: #3B4363;
-  height: 100vh;
   padding-top: 25px;
 }
 
@@ -44,6 +44,12 @@ body {
   padding: 10px;
   border: solid 3px #606E85;
   border-radius: 6px;
+}
+
+@media screen and (max-height: 500px) {
+  .header {
+    height: 25vh;
+  }
 }
 
 .logo {
@@ -252,6 +258,12 @@ body {
   }
 }
 
+@media screen and (max-height: 600px) {
+  .main__content {
+    height: 100vh;
+  }
+}
+
 .rules {
   width: 110px;
   margin: 0 auto 24px;
@@ -283,8 +295,13 @@ body {
 }
 
 .attribution {
-  font-size: 12px;
+  font-size: 11px;
   text-align: center;
+}
+
+.attribution a {
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .modal__rules {
@@ -320,6 +337,7 @@ body {
 #btn--close {
   height: 45px;
   width: 45px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {

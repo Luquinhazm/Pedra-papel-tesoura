@@ -1,5 +1,6 @@
 .modal__rules{
     display: none;
+    opacity: 1;
     justify-content: space-between;
     padding: 20px;
     align-items: flex-start;
@@ -17,12 +18,37 @@
     margin: 0 auto;
     border-radius: 10px;
 
+    -webkit-animation: scale-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	animation: scale-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+
     span{
         font-size: 38px;
         text-transform: uppercase;
         font-weight: 700;
     }
 
+}
+
+@keyframes scale-in {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}
+
+@keyframes scale-out {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
 }
 
 #btn--close{

@@ -44,10 +44,10 @@ btnScissors.addEventListener('click', ()=>{
 } )
 
 function jokenpo() {
-    const escolhaPC = Math.floor(Math.random() * 3)
+    const optionPC = Math.floor(Math.random() * 3)
     let choosePc = ''
     
-    switch(escolhaPC) {
+    switch(optionPC) {
         case 0 :
             paperPc.style.display = 'flex'
             choosePc = paper

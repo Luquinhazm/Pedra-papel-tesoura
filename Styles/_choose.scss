@@ -5,11 +5,13 @@
     justify-content: center;
     margin-top: 40px;
     height: 60vh;
+    transition: 1000ms ease;
     
     .PaperAndScissors{
         display: flex;
         align-items: center;
         justify-content: center;
+        
     }
 }
 

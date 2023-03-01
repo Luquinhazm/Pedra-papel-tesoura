@@ -1,39 +1,39 @@
 .main__content {
-    background-image: url(/images/bg-triangle.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 180px;
-    min-height: 60vh;
-    max-width: 580px;
-    width: 80%;
-    min-width: 300px;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    .PaperAndScissors {
-    display: flex;
-    justify-content: center;
-    max-width: 600px;
-    width: 100%;
-    min-width: 300px;
-    margin-bottom: 50px;
-    gap: 50px;
-    }
-    
-    .choice-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    cursor: pointer;
-    
-    .choice {
+  background-image: url(/images/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 180px;
+  min-height: 60vh;
+  max-width: 580px;
+  width: 80%;
+  min-width: 300px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.PaperAndScissors {
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+  min-width: 300px;
+  margin-bottom: 50px;
+  gap: 50px;
+}
+
+.choice-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  .choice {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 45%;
@@ -41,60 +41,59 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    }
-    }
-    
-    .paper--wrap {
-    @extend .choice-wrap;
-    @include paperGradient;
-    
-    .choice {
+  }
+}
+
+.paper--wrap {
+  @extend .choice-wrap;
+  @include paperGradient;
+
+  .choice {
     @extend .choice;
     background-image: url(/images/icon-paper.svg);
-    }
-    }
-    
-    .scissors--wrap {
-    @extend .choice-wrap;
-    @include scissorsGradient;
-    
-    .choice {
+  }
+}
+
+.scissors--wrap {
+  @extend .choice-wrap;
+  @include scissorsGradient;
+
+  .choice {
     @extend .choice;
     background-image: url(/images/icon-scissors.svg);
-    }
-    }
-    
-    .rock--wrap {
-    @extend .choice-wrap;
-    @include rockGradient;
-    margin: 0 auto;
-    
-    .choice {
+  }
+}
+
+.rock--wrap {
+  @extend .choice-wrap;
+  @include rockGradient;
+  margin: 0 auto;
+
+  .choice {
     @extend .choice;
     background-image: url(/images/icon-rock.svg);
-    }
-    }
-    
-    @media screen and (min-width: 600px) {
-    .main__content {
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .main__content {
     background-size: 250px;
     max-width: 700px;
-    }
-    
-    .choice-wrap {
+  }
+
+  .choice-wrap {
     width: 150px;
     height: 150px;
 
     .choice {
-        width: 120px;
-        height: 120px;
-      }
-
+      width: 120px;
+      height: 120px;
     }
+  }
 }
 
 @media screen and (max-height: 600px) {
-    .main__content {
+  .main__content {
     height: 100vh;
-    }
-    }
+  }
+}

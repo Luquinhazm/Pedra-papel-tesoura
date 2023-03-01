@@ -1,9 +1,9 @@
-.rules{
+.rules {
     width: 110px;
     margin: 0 auto 24px;
 }
 
-.rules__btn{
+.rules__btn {
     font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -16,10 +16,10 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: 600px){
-   .rules{
-       display: flex;
-       width: 80%;
-       justify-content: flex-end;
-   }
+@media screen and (min-width: 600px) {
+    .rules {
+        display: flex;
+        width: 80%;
+        justify-content: flex-end;
+    }
 }

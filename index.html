@@ -1,71 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#141539">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#141539" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Rock, Paper, Scissors</title>
+
+    <link rel="stylesheet" href="Styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
   
-  <title>Rock, Paper, Scissors</title>
+  <body id="body">
+    <header class="header">
+      <a href="index.html" class="logo"
+        ><img src="images/logo.svg" alt="Rock, Paper, Scissors" "></a
+      >
+      <div class="score">
+        <span class="score__label">Score</span>
+        <span class="score__record" id="scoreRecord">0</span>
+      </div>
+    </header>
 
-  <link rel="stylesheet" href="Styles/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <div class="" id="hidden__mainPage">
+      <main class="main__content">
+        <div class="PaperAndScissors">
+          <div class="paper--wrap" id="btnPaper">
+            <div class="paper"></div>
+          </div>
 
-</head>
-<body id="body">
-  
-  <header class="header">
-    <a href="index.html" class="logo"><img src="images/logo.svg" alt="Rock, Paper, Scissors" "></a>
-    <div class="score">
-      <span class="score__label">Score</span>
-      <span class="score__record" id="scoreRecord">0</span>
+          <div class="scissors--wrap" id="btnScissors">
+            <div class="scissors"></div>
+          </div>
+        </div>
+
+        <div class="rock--wrap" id="btnRock">
+          <div class="rock"></div>
+        </div>
+      </main>
     </div>
-  </header>
 
-  <div class="" id="hidden__mainPage">
-
-    <main class="main__content">
-      
+    <div class="step-choose" id="choosePage">
       <div class="PaperAndScissors">
-        
-        <div class="paper--wrap" id="btnPaper">
-          <div class="paper"></div>
+        <div class="player__picked--paper" id="pickedPaper">
+          <span>you picked</span>
+          <div class="paper--wrap">
+            <div class="paper"></div>
+          </div>
         </div>
-        
-        <div class="scissors--wrap" id="btnScissors">
-          <div class="scissors"></div>
-        </div>
-        
-      </div>
-      
-      <div class="rock--wrap" id="btnRock">
-        <div class="rock"></div>
-      </div>
-      
-    </main>
-  </div>
 
-  <div class="step-choose" id="choosePage">
-
-    <div class="PaperAndScissors">
-      
-      <div class="player__picked--paper" id="pickedPaper">
-        <span>you picked</span>
-        <div class="paper--wrap">
-          <div class="paper"></div>
+        <div class="player__picked--scissors" id="pickedScissors">
+          <span>you picked</span>
+          <div class="scissors--wrap">
+            <div class="scissors"></div>
+          </div>
         </div>
-      </div>
-      
-      <div class="player__picked--scissors" id="pickedScissors">
-        <span>you picked</span>
-        <div class="scissors--wrap">
-          <div class="scissors"></div>
-        </div>
-      </div>
-      
 
         <div class="player__picked--rock" id="pickedRock">
           <span>you picked</span>
@@ -73,55 +74,55 @@
             <div class="rock"></div>
           </div>
         </div>
-        
-        
+
         <div class="pc__picked--paper" id="pickedPaperPc">
           <span>the house picked</span>
           <div class="paper--wrap">
             <div class="paper"></div>
           </div>
         </div>
-        
+
         <div class="pc__picked--scissors" id="pickedScissorsPc">
           <span>the house picked</span>
           <div class="scissors--wrap">
             <div class="scissors"></div>
           </div>
         </div>
-        
+
         <div class="pc__picked--rock" id="pickedRockPc">
           <span>the house picked</span>
           <div class="rock--wrap">
             <div class="rock"></div>
           </div>
         </div>
+      </div>
 
-    </div>
-      
       <div class="result" id="result">
         <span id="textResult"></span>
         <button class="btn__playAgain" id="playAgain">Play Again</button>
       </div>
-
-  </div>
-    
-  <div class="rules">
-      <button class="rules__btn" id="btnRules">Rules</button>
-  </div>
-
-  <div class="modal__rules" id="modalRules">
-    <span>Rules</span>
-    <img src="images/icon-close.svg" alt="fechar" id="btn--close">
-  </div>
-  
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/Luquinhazm" target="_blank">Luquinhazm</a>.
     </div>
-  </footer>
 
-  <script src="layoutChange.js"></script>
-  <script src="modal.js"></script>
-</body>
+    <div class="rules">
+      <button class="rules__btn" id="btnRules">Rules</button>
+    </div>
+
+    <div class="modal__rules" id="modalRules">
+      <span>Rules</span>
+      <img src="images/icon-close.svg" alt="fechar" id="btn--close" />
+    </div>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/Luquinhazm" target="_blank">Luquinhazm</a>.
+      </div>
+    </footer>
+
+    <script type="module" src="./logic/play.js"></script>
+    <script type="module" src="./logic/modal.js"></script>
+  </body>
 </html>
